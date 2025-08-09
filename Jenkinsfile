@@ -51,7 +51,7 @@ pipeline {
                 echo "Deploying JAR: ${jarFile}"
                 bat "@echo off & java -jar \"target\\${jarFile}\" --server.port=9090"
             } else {
-                error "No runnable JAR found in target directory!"
+                error "No runnable JAR found in target directory !"
             }
         }
     }
